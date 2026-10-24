@@ -1,0 +1,36 @@
+{
+  "name": "prompt2change",
+  "version": "1.0.0",
+  "description": "Firefox BYOK extension to restyle and remix websites with AI prompts, inspired by ClickRemix.",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt -b firefox",
+    "build": "wxt build -b firefox",
+    "build:all": "wxt build",
+    "zip": "wxt zip -b firefox",
+    "compile": "tsc --noEmit"
+  },
+  "keywords": [
+    "firefox-extension",
+    "webextension",
+    "ai",
+    "clickremix",
+    "byok",
+    "openrouter",
+    "svelte5",
+    "unocss"
+  ],
+  "author": "notPlancha",
+  "license": "MIT",
+  "devDependencies": {
+    "@iconify-json/lucide": "^1.2.147",
+    "@unocss/preset-attributify": "^66.11.0",
+    "@unocss/preset-icons": "^66.11.0",
+    "@unocss/preset-uno": "^66.11.0",
+    "@wxt-dev/module-svelte": "^2.0.5",
+    "svelte": "^5.57.2",
+    "typescript": "^5.8.2",
+    "unocss": "^66.11.0",
+    "wxt": "^0.21.4"
+  }
+}
