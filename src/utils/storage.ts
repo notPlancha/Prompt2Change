@@ -12,8 +12,9 @@ function getStorageArea() {
   if (typeof browser !== 'undefined' && browser.storage?.local) {
     return browser.storage.local;
   }
-  if (typeof chrome !== 'undefined' && chrome.storage?.local) {
-    return chrome.storage.local;
+  const anyGlobal = globalThis as any;
+  if (typeof anyGlobal.chrome !== 'undefined' && anyGlobal.chrome.storage?.local) {
+    return anyGlobal.chrome.storage.local;
   }
   throw new Error('WebExtension storage is not available.');
 }
